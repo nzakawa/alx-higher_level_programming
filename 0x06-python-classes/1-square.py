@@ -10,5 +10,6 @@ class Square:
     __size = 0
 
     def __init__(self, prmSize):
+
         self.__size = prmSize
 
