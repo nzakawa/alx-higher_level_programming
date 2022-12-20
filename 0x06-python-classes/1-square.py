@@ -12,4 +12,3 @@ class Square:
 
     def __init__(self, prmSize):
         self.__size = prmSize
-
