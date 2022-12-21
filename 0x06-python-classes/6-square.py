@@ -12,9 +12,9 @@ class Square:
         Args:
             size: size of square
             position:  position of square
-            """
-            self.size = size
-            self.position = position
+        """
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -44,7 +44,8 @@ class Square:
         elif type(value[1]) is not int or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-            self.__position = value     # tuple contains 2 positive integers
+            self.__position = value     # tuple contains 2 positive integer
+
     def area(self):
         """ Computes area of a square """
         return self.__size ** 2
