@@ -33,8 +33,8 @@ class Square:
         else:
             for row in range(self.position[1]):
                 print()
-                for column in range(self.size):
-                    print("{}{}".format(" " * self.position[0], "#" * self.size))
+            for column in range(self.size):
+                print("{}{}".format(" " * self.position[0], "#" * self.size))
 
     @property
     def position(self):
