@@ -16,8 +16,8 @@ class Node:
         self.data = data
         self.next_node = next_node
 
-     @property
-     def data(self):
+    @property
+    def data(self):
         """ Gets data of a linked list """
         return self.__data
 
@@ -49,13 +49,13 @@ class SinglyLinkedList:
         self.__head = None
 
     def __str__(self) -> str:
-         """ returns string to be printed for SinglyLinkedList """
-         output = list()
-         future = self.__head
+        """ returns string to be printed for SinglyLinkedList """
+        output = list()
+        future = self.__head
 
-         while future is not None:
-             output.append(str(future.data))
-             future = future.next_node
+        while future is not None:
+            output.append(str(future.data))
+            future = future.next_node
 
         return "\n".join(output)
 
