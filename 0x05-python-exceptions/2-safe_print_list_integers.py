@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    number = 0
-    for idx in range(x):
+    count = 0
+    errors = 0
+    while count < x:
         try:
-            print("{:d}".format(my_list[idx]), end="")
-            number += 1
+            print("{:d}".format(my_list[count]), end='')
+            count += 1
         except (ValueError, TypeError):
-            idx += 1
-            continue
-        print("")
-        return
+            count += 1
+            errors += 1
+        count -= errors
+        print()
+        return count
