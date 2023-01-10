@@ -14,7 +14,7 @@ def pascal_triangle(n):
         triangle[row].append(1)
         for col in range(int(row / 2)):
             triangle[row].append(triangle[row - 1][col] +
-                                triangle[row - 1][col + 1])
+                                 triangle[row - 1][col + 1])
         if row % 2 == 1:
             triangle[row].extend(triangle[row][::-1])
         else:
