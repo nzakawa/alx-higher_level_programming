@@ -18,4 +18,3 @@ class Student:
             if type(objdict[ele]) in [list, dict, str, int, bool]:
                 retdict[ele] = objdict[ele]
         return retdict
-
